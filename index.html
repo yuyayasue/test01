@@ -8,24 +8,15 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <style>
 
-a	{
-	text-decoration:none;
-}
-a:link	{
-	color :white;
-}
-a:visited	{
-	color : white;
-} 
-    </style>
+ 
 
     
 </head>
 
 <body>
     <header id="home">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <div class="header-left">
             <img class="logo" src="assets/img/808471f18abe052d96e2b52fa16bece9_w.jpg">Western Farm Thoroughbred Club</div>
         <div class="header-right">
@@ -42,30 +33,45 @@ a:visited	{
 
 
 <!-- メインナビゲーション -->
-    <nav class="nav">
-        <div>
-            <ul class="panel">
+    
+    <nav >
+        <div >
+            <ul class="nav">
+                <li><a href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house">
+                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg>HOME</a></li>
+                <li><a href="#information">Information</a></li>
+                <li><a href="">会員募集</a></li>
+                <li><a href="">User Support</a></li>
+                <li><a href="syozokuba.html">所属馬情報</a></li>
+                <li><a href="#aboutus">About us</a></li>
+            </ul>
+
+        </div>
+    </nav>
+<!-- スマホ用タグ -->
+    <div class="hamburger-menu">
+        <input type="checkbox" id="menu-bth-check">
+        <label for="menu-bth-check" class="menu-bth"><span></span></label>
+        <div class="menu-content">
+            <ul>
+                <li><a href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house">
+                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg>HOME</a></li>
+                <li><a href="#information">Information</a></li>
+                <li><a href="">会員募集</a></li>
+                <li><a href="">User Support</a></li>
+                <li><a href="syozokuba.html">所属馬情報</a></li>
+                <li><a href="#aboutus">About us</a></li>
             </ul>
         </div>
 
-        <button type="button" class="btn btn-primary"><a href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house">
-            <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-          </svg>HOME</a></button>
-        <button type="button" class="btn btn-secondary"><a href="#information">Information</a></button>
-        <button type="button" class="btn btn-success"><a href="">会員募集</a></button>
-        <button type="button" class="btn btn-danger"><a href="">User Support</a></button>
-        <button type="button" class="btn btn-warning"><a href="syozokuba.html">所属馬情報</a></button>
-        <button type="button" class="btn btn-info"><a href="#aboutus">About us</a></button>
-        
-
-
-        
-
-    </nav>
-
+    </div>
+    
 <!-- メイン画像 -->
-<section class="main-images">
+    <section class="main-images">
 
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -105,7 +111,7 @@ a:visited	{
         <span class="sr-only">Next</span>
         </a>
     </div>
-</section>
+    </section>
     
 
  <!-- インフォメーション      -->
@@ -210,38 +216,26 @@ a:visited	{
                 <br>
                 <small class="about-us-small">ウエスタンファームについて</small></a>
             </h2>
-            <!-- <div class="about-us-bthwrap">
-                <a href="">ご挨拶</a>
-                <a href="">会社概要</a>
-                <a href="">施設紹介</a>
-                <a href="">アクセス</a>
-
-            </div> -->
-        </div>
-        <div>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+        
         </div>
     </section>
-
+<!-- 所属馬検索 -->
     <section class="search">
         <h2 class="search-title">
             <a href="">所属馬検索</a>
         </h2>
     </section>
-
+<!-- 先頭に戻る -->
     <section class="pagetop">
        <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square">
         <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
       </svg>pagetop</a> 
     </section>
-
-    <footer>
+<!-- 企業概要等 -->
+    <section class="last">
         <div>
-            <ul class="footer-list">
-                <li><a href="">HOME</a></li>
+            <ul class="last-list">
+                <li><a href="#home">HOME</a></li>
                 <li><a href="">会社情報</a></li>
                 <li><a href="">採用情報</a></li>
                 <li><a href="">サイトのご利用に当たって</a></li>
@@ -249,6 +243,11 @@ a:visited	{
                 
             </ul>
         </div>
+        
+    </section>
+<!-- フッター -->
+    <footer>
+        Copyright © Western Farm Thoroughbred Club Inc.
     </footer>
 
   
