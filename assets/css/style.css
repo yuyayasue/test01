@@ -4,10 +4,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* flex-direction: column; */
-    /* width: 410px; */
-    /* margin: 40px 0 40px 0; */
     height: 100px;
+    width: 100%;
 
 }
 
@@ -17,6 +15,8 @@ header {
     padding: 0px;
     margin: 20px 5px 0 30px;
     color: white;
+    width: auto;
+  
 
 }
 .logo {
@@ -24,12 +24,13 @@ header {
     margin: 20px 5px 0 0px;
 }
 .header-right {
-    width: 30%;
+    width: auto;
     float: right;
     margin: 0 0px 0 0;
-    /* text-align: left; */
     background-color:#f4f0e3;
-    height: 100px;
+    height: 100px ;
+
+
     
 }
 
